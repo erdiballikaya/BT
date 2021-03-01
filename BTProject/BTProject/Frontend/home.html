@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Snippet - BBBootstrap</title>
+        <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet'>
+        <link href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
+
+        <script type='text/javascript'></script>
+        <link rel="stylesheet" href="Css\main.css">
+        
+    </head>
+    <body oncontextmenu='return false' class='snippet-body'>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <h1>Hoş Geldiniz</h1>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8  d-flex justify-content-center">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="Search" placeholder="Film Ara..." aria-label="Film Ara..." aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-danger" type="button" onclick="SearchFunc()">Ara</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center" style="background-color: whitesmoke">
+                <div class="col-md-12 d-flex justify-content-center"> 
+                    <table id="movieTable" class="cell-border" style="width:100%; background-color: whitesmoke;">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Year</th>
+                                <th>ID</th>
+                                <th>Actions</th>                                
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>Title</th>
+                                <th>Year</th>
+                                <th>ID</th>
+                                <th>Actions</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <h1>Profilinizdeki Filmler</h1>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center" style="background-color: whitesmoke">
+                <div class="col-md-12 d-flex justify-content-center"> 
+                    <table id="UserMovieTable" class="cell-border" style="width:100%; background-color: whitesmoke;">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Year</th>
+                                <th>ID</th>
+                                <th>Actions</th>                                
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>Title</th>
+                                <th>Year</th>
+                                <th>ID</th>
+                                <th>Actions</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    <script src="Script\home.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+    </body>
+</html>
